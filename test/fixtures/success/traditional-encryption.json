@@ -1,9 +1,0 @@
-{
-  "stream": {
-    "decrypt": false,
-    "decompress": false,
-    "validateCrc32": false
-  },
-  "isEncrypted": true,
-  "isCompressed": false
-}
