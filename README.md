@@ -1,6 +1,5 @@
-[![NPM version](https://img.shields.io/npm/v/yauzl-promise.svg)](https://www.npmjs.com/package/yauzl-promise)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/overlookmotel/yauzl-promise/test.yml?branch=master)](https://github.com/overlookmotel/yauzl-promise/actions)
-[![Coverage Status](https://img.shields.io/coveralls/overlookmotel/yauzl-promise/master.svg)](https://coveralls.io/r/overlookmotel/yauzl-promise)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/cmaster11/yauzl-promise/test.yml?branch=master)](https://github.com/cmaster11/yauzl-promise/actions)
+[![Coverage Status](https://img.shields.io/coveralls/cmaster11/yauzl-promise/master.svg)](https://coveralls.io/r/cmaster11/yauzl-promise)
 
 # Unzip library for NodeJS
 
@@ -9,7 +8,7 @@
 This library is a rewrite of `yauzl`, which retains all its features and careful adherence to the ZIP spec, but with the following improvements:
 
 * Promise-based API
-* Validation of CRC32 checksums to ensure data integrity (using fast Rust CRC32 calculation)
+* Validation of CRC32 checksums to ensure data integrity
 * Support for unzipping faulty ZIP files created by Mac OS Archive Utility (see [here](https://github.com/thejoshwolfe/yauzl/issues/69))
 * Extract files from ZIP in parallel
 * Additional options
@@ -20,6 +19,11 @@ API is mostly the same as `yauzl`, but some options and properties are renamed t
 It passes all of `yauzl`'s test suite.
 
 Versions v1 - v3 were a wrapper around `yauzl`. v4 is a re-write from scratch.
+
+## BIG DISCLAIMER
+
+This repo is a fork of the original https://github.com/overlookmotel/yauzl-promise, where I have removed the Rust bindings so that
+yauzl-promise can be easily bundled when using ESBuild.
 
 ## Usage
 
